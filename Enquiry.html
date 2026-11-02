@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description about the workshop-->
+    <meta name="description" content="Mohlala Vehicle Workshop is a vehicle mechanic workshop in Jane Furse, 
+    Ga Sekhukhune, Limpopo. We specialise in mechanical and auto-electrical repairs, with quality service at fair prices.">
+
+    <!--The contect of the workshop-->
+    <meta name="keywords" content="vehicle workshop, mechanic, auto electrical, Jane Furse, Limpopo">
+
+    <!--Adding the favicon-->
+    <link rel="icon" type="image/jpeg" href="IMAGES/favicon.jpg">
+
+    <!--Webpage title-->
+    <title>MohlalaWorkshop | Enquiries</title>
+
+    <!--Linking the css with html-->
+    <link rel="stylesheet" href="cssfolder/styling.css">
+
+     <!--Linking html with javascript-->
+    <script src="jsfolder/script.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+
+        <!--Adding the logo on the heading-->
+        <h1><img src="IMAGES/logo.png" width="100" height="100" alt="Mohlala Workshop logo" style="border-radius: 40%;"> ENQUIRIES PAGE</h1>
+
+        <!--The Menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Adding the enquiry form and the map-->
+    <main class="EnquiryMain">
+        <section class="form-card">
+            <h2>Send us an Enquiry</h2>
+            <p class="form-note">Fields marked <span class="required">*</span> are required.</p>
+
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="post" id="enquiryForm" novalidate>
+                <fieldset>
+                    <legend>Your details</legend>
+
+                    <label for="enqName">Full name <span class="required">*</span></label>
+                    <input type="text" id="enqName" name="full_name" placeholder="e.g. Leeto Mohlala" required>
+
+                    <label for="enqPhone">Phone / WhatsApp number <span class="required">*</span></label>
+                    <input type="tel" id="enqPhone" name="phone" placeholder="e.g. 064 638 7161" required>
+
+                    <label for="enqEmail">Email address</label>
+                    <input type="email" id="enqEmail" name="email" placeholder="e.g. name@example.com">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Vehicle details</legend>
+
+                    <label for="enqMake">Vehicle make <span class="required">*</span></label>
+                    <input type="text" id="enqMake" name="vehicle_make" placeholder="e.g. Toyota" required>
+
+                    <label for="enqModel">Vehicle model <span class="required">*</span></label>
+                    <input type="text" id="enqModel" name="vehicle_model" placeholder="e.g. Hilux" required>
+
+                    <label for="enqYear">Year</label>
+                    <input type="number" id="enqYear" name="vehicle_year" min="1980" max="2030" placeholder="e.g. 2015">
+                </fieldset>
+
+                <fieldset>
+                    <legend>What do you need?</legend>
+
+                    <label for="enqService">Service type <span class="required">*</span></label>
+                    <select id="enqService" name="service_type" required>
+                        <option value="">-- Select a service --</option>
+                        <option>Routine servicing</option>
+                        <option>Engine diagnostics and overhauls</option>
+                        <option>Braking systems</option>
+                        <option>Transmission and gearbox</option>
+                        <option>Suspension and steering</option>
+                        <option>Auto electrical</option>
+                        <option>Other</option>
+                    </select>
+
+                    <label for="enqDate">Preferred date</label>
+                    <input type="date" id="enqDate" name="preferred_date">
+
+                    <label for="enqMessage">Describe the problem <span class="required">*</span></label>
+                    <textarea id="enqMessage" name="message" rows="5" maxlength="1000" placeholder="Tell us what is happening with your vehicle..." required></textarea>
+                </fieldset>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" value="yes" required>
+                    I agree that Mohlala Workshop may contact me about this enquiry. <span class="required">*</span>
+                </label>
+
+                <div class="form-buttons">
+                    <button type="submit">Send Enquiry</button>
+                    <button type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <!--Adding the map-->
+        <h2>Locate us here:</h2>
+        <iframe title="Workshop location map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2266160.6959106084!2d26.8079371!3d-26.0107313!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9511bb339b5f1f%3A0x8324fb164dffe23!2sMohlala%20Motors!5e1!3m2!1sen!2sza!4v1789634771179!5m2!1sen!2sza" width="500" height="300" style="border:0; max-width:100%;" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </main>
+
+
+    <!--Our location and Address-->
+    <footer>
+        <p>MOHLALA WORKSHOP</p>
+        <address>
+            <h5>Limpopo (Jane Furse):</h5>
+            <h3>Click the following to find our location:</h3>
+            <a href="https://maps.app.goo.gl/LVm43k4UDXeNvBSj8"><button type="button">Our Location</button></a>
+        </address>
+    </footer>
+</body>
+</html>

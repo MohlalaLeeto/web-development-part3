@@ -1,0 +1,281 @@
+css Reset*/
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*Applying CSS on the header*/
+header{
+background-color:rgb(0, 255, 221);
+border-radius:5px;
+}
+
+/*Applying CSS on all the h1 tags*/
+h1{
+     color:rgb(78, 162, 153) (65,65,144);
+     font-family:'Courier New',courier,monospace;
+     font-size: 40px;
+     padding: 20px;
+}
+
+nav{
+    background-color: rgb(0, 255, 115);
+}
+
+/*Making the workshop logo look rounder*/
+.logo{
+    border-radius: 100%;
+    width:90%;
+    height:500px;
+}
+
+/*Making the whatapp, sms, call and email logos look rounder and adjusting there size*/
+.whatsapp_logo, .sms_logo, .call_logo, .email_logo{
+    border: solid black 2px;
+    border-radius:100%;
+    width:35px;
+    height:35px;
+}
+
+ /*Styling the menu*/
+nav ul li a{
+
+color:rgb(56,150,150);
+text-decoration:none;
+padding: 10px;
+display:inline-block;
+}
+
+nav ul{
+
+    display:flex;
+    list-style-type:none;
+    padding: 10px;
+
+}
+
+nav ul li a:hover{
+      
+      background-color: rgb(255, 255, 255);
+      color:hsl(240, 38%, 41%);
+      border-radius: 35px;
+}
+
+h2{
+
+    padding: 20px;
+}
+
+.reponsive-image{
+
+    height: auto;
+    max-width:100%;
+}
+
+.container{
+   
+    display:inline-grid;
+    grid-template-columns: auto auto auto;
+
+}
+
+.container div{
+
+background-color: rgb(128, 0, 128);
+margin:5px;
+padding:20px;
+color:hsl(0, 0%, 100%);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius:15px;
+
+}
+
+/* Applying CSS on Index Main tag */
+.indexMain{
+background-color: hsl(157, 73%, 75%);
+margin:5px;
+padding:20px;
+color:rgb(255, 255, 255);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius:15px;
+}
+
+/* Applying CSS on Contact Main tag */
+.contactMain{
+background-image: url('../IMAGES/admin.jpg');
+background-position: center;
+background-size: 100%;
+background-repeat: no-repeat;;
+color:rgb(255, 255, 255);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius:15px;
+}
+
+/* Applying CSS on About us page */
+#about{
+background-color: hsl(305, 73%, 75%);
+margin:5px;
+padding:20px;
+color:rgb(0, 0, 0);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius:15px;
+
+}
+
+/* Applying CSS on Services Main tag */
+.servicesMain{
+background-color: aliceblue;
+background-size: 100%;
+color:rgb(0, 0, 139);
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius:15px;
+}
+
+/* Applying CSS all pages footer */
+footer{
+background-color:rgb(224, 255, 255);
+margin:5px;
+padding:20px;
+color:hsl(0, 0%, 0%);
+font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+border-radius:15px;
+}
+
+/* Applying css on the location tag */
+button{
+    background-color:hsl(271, 76%, 53%) ;
+    color:hsl(240, 100%, 50%);
+    border-radius:5px;
+}
+
+/* Styling the workshop images*/
+.WorkshopExterior{
+    border-radius: 100%;
+    width:90%;
+    height:500px;
+
+}
+
+.WorkshopInterior{
+    border-radius:100px;
+    width:90%;
+    height:400px;
+
+}
+
+/*Styling the images at the services page*/
+.workshopInterior, .diagnoseMachine{
+    border: solid black 8px;
+    border-radius: 100%;
+    width:50%;
+    height:400px;
+}
+
+/*Adjusting the size of the map*/
+iframe{
+    width:90%;
+    height:350px;
+}
+
+
+
+
+/*Styling the forms*/
+.form-card{
+    background-color: rgb(255, 255, 255);
+    max-width: 650px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-card h2{
+    padding: 0 0 10px 0;
+    color: rgb(56,150,150);
+}
+
+.form-card fieldset{
+    border: 1px solid rgb(56,150,150);
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.form-card legend{
+    padding: 0 8px;
+    font-weight: bold;
+    color: hsl(240, 38%, 41%);
+}
+
+.form-card label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="tel"],
+.form-card input[type="number"],
+.form-card input[type="date"],
+.form-card select,
+.form-card textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid rgb(150,150,150);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-card input:focus,
+.form-card select:focus,
+.form-card textarea:focus{
+    outline: 2px solid rgb(0, 255, 221);
+    border-color: rgb(56,150,150);
+}
+
+.form-card .inline-option{
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.form-card .checkbox-label{
+    font-weight: normal;
+}
+
+.form-card .required{
+    color: red;
+}
+
+.form-card .form-buttons{
+    margin-top: 15px;
+}
+
+.form-card button{
+    background-color: hsl(271, 76%, 53%);
+    color: rgb(255, 255, 255);
+    padding: 10px 25px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-card button:hover{
+    background-color: hsl(271, 76%, 40%);
+}
+
+.form-note{
+    font-size: 13px;
+    color: rgb(90,90,90);
+    margin-top: 8px;
+}

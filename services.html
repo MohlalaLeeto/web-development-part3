@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Description about the workshop-->
+    <meta name="description" content="Mohlala Vehicle Workshop is a vehicle mechanic workshop in Jane Furse, 
+    Ga Sekhukhune, Limpopo. We specialise in mechanical and auto-electrical repairs, with quality service at fair prices.">
+
+    <!--The contect of the workshop-->
+    <meta name="keywords" content="vehicle workshop, mechanic, auto electrical, Jane Furse, Limpopo">
+
+    <!--Adding the favicon-->
+    <link rel="icon" type="image/jpeg" href="IMAGES/favicon.jpg">
+
+    <!--Webpage title-->
+    <title>MohlalaWorkshop | Services</title>
+
+    <!--Linking the css with html-->
+    <link rel="stylesheet" href="cssfolder/styling.css">
+
+     <!--Linking html with javascript-->
+    <script src="jsfolder/script.js" defer></script>
+</head>
+
+
+
+<body>
+    <header>
+
+        <!--Adding the logo on the heading-->
+        <h1><img src="IMAGES/logo.png" width="100" height="100" alt="Mohlala Workshop logo" style="border-radius: 40%;"> OUR SERVICES PAGE</h1>
+
+        <!--The Menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Services main tag-->
+    <main class="servicesMain">
+        <h1>WE SPECIALISE IN:</h1>
+
+        <!--Adding a form on what the workshop specializes on-->
+        <div class="service-tools">
+            <label for="servicesSearch">Search</label>
+            <input type="search" id="servicesSearch" placeholder="e.g. brakes">
+
+            <label for="serviceCategory">Category</label>
+            <select id="serviceCategory">
+                <option value="all">All</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Electrical">Electrical</option>
+            </select>
+
+            <label for="serviceSort">Sort by</label>
+            <select id="serviceSort">
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="price-asc">Price (low to high)</option>
+                <option value="price-desc">Price (high to low)</option>
+            </select>
+        </div>
+
+        <p id="serviceCount" role="status"></p>
+        <div id="serviceGrid" class="service-grid"></div>
+
+        <noscript>
+            <h3>- Routine servicing</h3>
+            <h3>- Engine diagnostics and overhauls</h3>
+            <h3>- Braking systems</h3>
+            <h3>- Transmission and gearbox</h3>
+            <h3>- Suspension and steering</h3>
+            <h3>- Auto electrical</h3>
+        </noscript>
+
+
+        <!--Diagnose machine and workshop interior-->
+        <img src="IMAGES/workshopInterior.jpg" class="workshopInterior" alt="Workshop interior">
+        <img src="IMAGES/diagnoseMachine.jpg" class="diagnoseMachine" alt="Diagnostic machine">
+    </main>
+
+
+    <!--Our location and Address-->
+    <footer>
+        <p>MOHLALA WORKSHOP</p>
+        <address>
+            <h5>Limpopo (Jane Furse):</h5>
+            <h3>Click the following to find our location:</h3>
+            <a href="https://maps.app.goo.gl/LVm43k4UDXeNvBSj8"><button type="button">Our Location</button></a>
+        </address>
+    </footer>
+</body>
+</html>
